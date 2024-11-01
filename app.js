@@ -22,7 +22,7 @@ const Card = mongoose.model('Card', cardSchema)
 const app = express()
 app.use(cors())
 
-app.use(express.static(path.join(__dirname, 'build')))
+app.use(express.static(path.join(__dirname, 'dist')))
 
 app.get('/cards', async (req, res) => {
   try {
