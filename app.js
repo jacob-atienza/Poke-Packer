@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 const app = express()
 const cors = require('cors')
 app.use(cors())
+app.use(express.static('dist'))
 
 const router = require('./routes/cards')
 
